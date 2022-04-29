@@ -9,6 +9,7 @@
     "stdexcept": "c",
     "typeinfo": "c",
     "__functional_03": "c",
-    "__mutex_base": "c"
+    "__mutex_base": "c",
+    "__locale": "c"
   }
 }
