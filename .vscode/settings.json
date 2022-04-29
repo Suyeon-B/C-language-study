@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "__debug": "c",
+    "exception": "c",
+    "functional": "c",
+    "memory": "c",
+    "new": "c",
+    "optional": "c",
+    "stdexcept": "c",
+    "typeinfo": "c",
+    "__functional_03": "c",
+    "__mutex_base": "c"
+  }
+}
