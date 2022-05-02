@@ -26,6 +26,7 @@ typedef struct
 
 rbtree *new_rbtree(void);
 void delete_rbtree(rbtree *);
+void postorder_del(rbtree *, node_t *);
 
 node_t *rbtree_insert(rbtree *, const key_t);
 void rbtree_insert_fixup(rbtree *, node_t *);
@@ -34,8 +35,11 @@ void right_rotate(rbtree *, node_t *);
 node_t *rbtree_find(const rbtree *, const key_t);
 node_t *rbtree_min(const rbtree *);
 node_t *rbtree_max(const rbtree *);
+node_t *subtree_min(const rbtree *, const node_t *);
+void rb_transplant(rbtree *, node_t *, node_t *);
+void rb_erase_fixup(rbtree *, node_t *);
 int rbtree_erase(rbtree *, node_t *);
-
 int rbtree_to_array(const rbtree *, key_t *, const size_t);
+int inorder(node_t *, key_t *, const rbtree *, int);
 
 #endif // _RBTREE_H_
